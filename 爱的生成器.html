@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>表白语生成器</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background-color: #f0f0f0;
+}
+.container {
+text-align: center;
+background: #fff;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+button {
+padding: 10px 20px;
+font-size: 16px;
+margin-top: 20px;
+cursor: pointer;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>表白语生成器</h1>
+<p id="loveMessage">点击下方按钮生成表白语</p >
+<button onclick="generateLoveMessage()">生成表白语</button>
+</div>
+
+<script>
+const loveQuotes = [
+"你是我心中的唯一。",
+"我爱你，直到永远。",
+"每一天都因为你而美好。",
+"你是我生命中的阳光。",
+"我愿意陪你走过每一个春夏秋冬。",
+"你的笑容像阳光一样温暖，照亮了我的每一天。",
+"每次看到你，我的心跳都会加速，你是我生命中的唯一。",
+"你是我遇见过的最美好的人，和你在一起的每一刻都让我感到幸福。",
+"无论未来如何，我都愿意陪你走过每一个春夏秋冬。",
+"你的存在让我的世界变得更加美好，我愿意永远守护你。",
+"你是我心中的宝藏，每次想到你，我的心都充满了甜蜜。",
+"和你在一起的时光是我最珍贵的回忆，我希望能一直这样下去。",
+"你是我生命中的阳光，没有你，我的世界将一片黑暗。",
+"每次听到你的声音，我的心都会感到无比的温暖。",
+"你是我梦寐以求的爱人，我愿意用一生去爱你。",
+"你的眼睛像星星一样闪亮，每次看着你，我都感到无比幸福。",
+"你是我生命中的奇迹，遇见你是我最幸运的事。",
+"你的温柔让我感到无比的安心，我愿意永远陪伴在你身边。",
+"你是我心中的唯一，每次想到你，我的心都充满了甜蜜。",
+"和你在一起的每一刻都是我最珍贵的回忆。",
+"你是我生命中的阳光，没有你，我的世界将一片黑暗。",
+"每次听到你的声音，我的心都会感到无比的温暖。",
+"你是我梦寐以求的爱人，我愿意用一生去爱你。",
+"你的微笑是我每天最大的动力。",
+"你是我心中的宝藏，我愿意用一生去守护你。"
+];
+
+function generateLoveMessage() {
+const randomIndex = Math.floor(Math.random() * loveQuotes.length);
+document.getElementById("loveMessage").innerText = loveQuotes[randomIndex];
+}
+</script>
+</body>
+</html>
+未选择文件
